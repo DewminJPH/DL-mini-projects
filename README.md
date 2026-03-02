@@ -21,3 +21,22 @@ When tensorflow was released initially it was hard to make neural networks from 
 - Those 2 Neurons represent the Malignant and Benign. Those two neuron gives the predicted values and for the final outcome is based on the maximum value in between those output neurons. 
 
 - For find the maximum value I have used argmax function. 
+
+## 2. Processing Image Data in Python for Deep Learning Applications
+
+- This project will help to learn how to read an image file and how to convert it to an numpy array and also how to resize an image.
+- When we use dataset with images those images should be same dimension for the train neural networks, otherwise it cannot be train. 
+- And this project we can learn how to convert RGB image into gray scale image. 
+
+- Libraries that can be used for image processing
+1. matplotlib.image
+2. pillow
+3. OpenCV
+
+- In a grayscale image it can be represent using only 1 metrics which represents all the cells with corresponding the white intensity. 255- white, 0 - black
+- But RGB images it has 3 metrices those are corresponding to the RED intensity valued metrics, Green intensity valued metrics and Blue intensity valued metrics. 
+
+- **Purpose of doing this**
+- - Converting RGB image into grayscale image is help to save the space using only one metrics instead of using 3 metrices. So it will save lot of computation power as well as the time time that has been taking for processing the image. So we can use those grayscale image for neural network. 
+
+- - We cannot do this conversion all the time when the examine a color of a image. So if we are making those images into gray that is meaningless. 
