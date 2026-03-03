@@ -37,6 +37,20 @@ When tensorflow was released initially it was hard to make neural networks from 
 - But RGB images it has 3 metrices those are corresponding to the RED intensity valued metrics, Green intensity valued metrics and Blue intensity valued metrics. 
 
 - **Purpose of doing this**
-- - Converting RGB image into grayscale image is help to save the space using only one metrics instead of using 3 metrices. So it will save lot of computation power as well as the time time that has been taking for processing the image. So we can use those grayscale image for neural network. 
+  - Converting RGB image into grayscale image is help to save the space using only one metrics instead of using 3 metrices. So it will save lot of computation power as well as the time time that has been taking for processing the image. So we can use those grayscale image for neural network. 
 
-- - We cannot do this conversion all the time when the examine a color of a image. So if we are making those images into gray that is meaningless. 
+  - We cannot do this conversion all the time when the examine a color of a image. So if we are making those images into gray that is meaningless. 
+  
+## 3. MINST Handwritten Digit Classification
+- Dataset -> Image processing -> Train Test Split -> Neural Network -> Evalution of Neural Network 
+- Here MNIST dataset we don't need to do image processing part, it is already done in the dataset. So we need to do only divided the training set and the test set.
+
+- Here I have not used Convolution Neural Network which called as CNN, because it is little bit complex and it use for Image Recognition. 
+Here we are using RNN because it use to Text Recognition and audio recognition.
+
+- Now the image is turned into a metrics but it cannot be used as inputs to the neural network. So we need to make those values in a single array. Thats why we use Flatten option. 
+- I have used 4 layer neural network. 
+  - Input Layer
+  - Hidden Layer 1 with 50 neurons
+  - Hidden Layer 2 with 50 neurons
+  - Output Layer with 10 neurons. The reason behind the number of output layer is there should be 10 outputs we are expecting from this images. Which are [0,1,2,3,4,5,6,7,8,9]. Each nueron has responsibilty of the each corresponding number. Thats why I select 10 nuerons for output layer. 
