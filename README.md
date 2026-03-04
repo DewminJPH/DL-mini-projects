@@ -41,7 +41,7 @@ When tensorflow was released initially it was hard to make neural networks from 
 
   - We cannot do this conversion all the time when the examine a color of a image. So if we are making those images into gray that is meaningless. 
   
-## 3. MINST Handwritten Digit Classification
+## 3. MNIST Handwritten Digit Classification
 - Dataset -> Image processing -> Train Test Split -> Neural Network -> Evalution of Neural Network 
 - Here MNIST dataset we don't need to do image processing part, it is already done in the dataset. So we need to do only divided the training set and the test set.
 
@@ -54,3 +54,17 @@ Here we are using RNN because it use to Text Recognition and audio recognition.
   - Hidden Layer 1 with 50 neurons
   - Hidden Layer 2 with 50 neurons
   - Output Layer with 10 neurons. The reason behind the number of output layer is there should be 10 outputs we are expecting from this images. Which are [0,1,2,3,4,5,6,7,8,9]. Each nueron has responsibilty of the each corresponding number. Thats why I select 10 nuerons for output layer. 
+
+## 4. Dog vs Cat Classification using Transfer Learning
+- Here I used pre trained model which is MobileNet V2 to classify the give image is a cat image or a dog image.
+- **Transfer Learning**
+  - Transfer Learning is a deep learning technique where we use a pre-trained model. The pre-trained model is trained for one task and can be re-trained for a similar task with a smaller dataset.
+  - Advantage is of using this is when we train a model from scratch we have only few dataset for the input. So we cannot achieve good accuracies. By using this transfer learning method we can get higher accuracy compated to training models from scratch. 
+
+- Examples of pre-trained models:
+  - VGG-16
+  - ResNet50
+  - Inceptionv3
+  - MobileNet V2 (light weight model, YOLO: You Only Look Once- used for object detection tasks)
+
+- Dataset -> Image Processing -> Train Test Split -> Pretrained MobileNet Model -> Model Evaluation
