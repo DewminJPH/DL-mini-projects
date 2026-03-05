@@ -68,3 +68,11 @@ Here we are using RNN because it use to Text Recognition and audio recognition.
   - MobileNet V2 (light weight model, YOLO: You Only Look Once- used for object detection tasks)
 
 - Dataset -> Image Processing -> Train Test Split -> Pretrained MobileNet Model -> Model Evaluation
+
+- At first I have imported the dataset from kaggle. which is contained from zip files. So I have to unzip those files and create a new folder which named 'train' with 2000 training data set. 
+- That file has contained with 1000 cat and 1000 dog images with different dimensions. So my next step was make them into same dimension and move into a another new folder called as 'image resized'.
+- After that I have labeled those dog and cat images by looking at first 3 indexes of their file name. Dog as 1 and cat as 0.
+- Next step is read those all the images and convert them into numpy array.
+- After that split those 2000 numpy arrays into training and test data. 1600 for training set and 400 for testing set. And scaled those intesity values between 0 and 1 by dividing 255.
+
+- Next step is model building by using the existing MobileNet V2. 
