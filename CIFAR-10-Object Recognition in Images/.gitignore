@@ -1,0 +1,7 @@
+train/
+cifar-10.zip
+test.7z
+train.7z
+sampleSubmission.csv
+trainLabels.csv
+.ipynb_checkpoints/
