@@ -76,3 +76,27 @@ Here we are using RNN because it use to Text Recognition and audio recognition.
 - After that split those 2000 numpy arrays into training and test data. 1600 for training set and 400 for testing set. And scaled those intesity values between 0 and 1 by dividing 255.
 
 - Next step is model building by using the existing MobileNet V2. 
+
+## 5. CIFAR - 10 Object Recognition using ResNet50
+- This dataset has 60000 images of 10 different categories with 32x32 dimension.
+- There are 3 types of encoding methods.
+  1. manually convert the strings to numerical values
+  2. label encoder
+  3. one hot encoding
+- In here I am going with the option 1. 
+- Normalization means all the values are in same range. 
+
+## 6. Plant Disease Image Classifier
+- Streamlit 
+   In this site users can browse and paste the files from their local system.
+
+- Image Data -> Data Processing -> Train Test Split -> CNN Training -> Model Evaluation -> Streamlit Web App -> Dockerfile -> Docker Image -> Docker Container
+
+- At first I have seeding to reproducibility. Because in a lot of the steps that we are working on internally some random process happens. Think if we are building a neural network it will give a parameter values. If I run again this, the model will give another random value that slightly differ from previous one. So avoid that randomness I have used seed method here and it set to 0 to do not change the value.
+
+- Next step is I have opened the kaggle.json file with json library.
+
+- InputDataGenerator :
+- flow_from_directory 
+- Sequential is coming from the imported model library. It is used when we have a linear stack of layers so 
+- MaxPooling layer reduces the spatial Dimensions of the height and width of the image.
