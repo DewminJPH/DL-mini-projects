@@ -1,0 +1,21 @@
+[global]
+showWarningOnDirectExecution = true
+
+[logger]
+level = "info"
+
+[runner]
+magicEnabled = true
+
+[server]
+headless = true
+runOnSave = false
+port = 80
+# Enable these to allow browser access through the Docker bridge
+enableCORS = true
+enableXsrfProtection = true
+
+[browser]
+serverAddress = "0.0.0.0"
+serverPort = 80
+gatherUsageStats = false
