@@ -1,0 +1,29 @@
+Machine Learning Projects for Beginners 
+These beginner machine learning projects consist of dealing with structured, tabular data. You will apply the skills of data cleaning, processing, and visualization for analytical purposes and use the scikit-learn framework to train and validate machine learning models. 
+
+If you want to learn the basic concepts of machine learning first, we have a no-code understanding machine learning course. You can also check out some of our AI projects if you're looking to improve your skills in that area. 
+
+1. Predict energy consumption
+In the Predict Energy Consumption project, you will use regression and machine learning models to predict daily power consumption based on temporal factors like time of day and temperature. The goal is to uncover patterns that can optimize energy usage, improving efficiency and reducing costs. This is particularly important for utilities and businesses aiming to reduce operational expenses, promote energy conservation, and better manage their resources in a more sustainable way.
+
+The Predict Energy Consumption project is a guided project, but you can replicate the objectives on a different dataset, such as Seoul's Bike Sharing Demand. Working on a completely new dataset will help you with code debugging and improve your problem-solving skills.
+
+2. Predict insurance charges
+In the From Data to Dollars - Predicting Insurance Charges project, you step into the role of a Data Scientist at a health insurance company. You will build a predictive model to estimate the insurance charges based on a client's attributes, such as age and health factors. This project offers a practical application of machine learning in business, enabling more accurate pricing models and helping companies manage risk while delivering personalized pricing strategies to clients. 
+
+The Predicting Insurance Charges is a guided project. You can replicate the result on a different dataset, such as the Hotel Booking Demand one. You can use it to predict whether a customer will cancel the booking or not.
+
+3. Predict credit card approvals
+In the Predicting Credit Card Approvals project, you will build an automatic credit card approval application using hyperparameter optimization and Logistic Regression. 
+
+You will apply the skill of handling missing values, processing categorical features, feature scaling, dealing with unbalanced data, and performing automatic hyperparameter optimization using GridCV. This project will challenge you beyond handling simple and clean data. 
+
+Predicting Credit Card Approvals is a guided project. You can replicate the result on a different dataset, such as the Loan Data from LendingClub.com. You can use it to build an automatic loan approval predictor.
+
+4. Wine quality prediction
+You could assemble a wine quality prediction project, using a dataset of wine physicochemical properties, such as alcohol content, acidity, and sugar levels. By applying classification models, like logistic regression in scikit-learn, you can classify wines on a scale of 1-10.
+
+This project is important for industries involved in wine production and quality control, as it enables them to consistently monitor and predict wine quality, ensuring product excellence.
+
+5. Predictive modeling for agriculture
+In the Predictive Modeling for Agriculture Data Science Project, you’ll build a simple crop recommendation system using supervised machine learning and feature selection. Working with four essential soil attributes: nitrogen, phosphorus, potassium, and pH. You’ll face a realistic constraint: the farmer can afford to measure only one. Your job is to identify which single feature best predicts the right crop and then train a lightweight classifier to make that recommendation reliably.
